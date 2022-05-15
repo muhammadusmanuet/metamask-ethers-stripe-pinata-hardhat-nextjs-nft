@@ -1,0 +1,5 @@
+1- npx hardhat => initalize hardhat inside project
+2- npx hardhat node => creates/starts local blockchain network
+3- npx hardhat test => Runs tests inside test/sample-test.js
+4- npx hardhat compile => Compiles smart contracts to binary code
+5- npx hardhat run scripts/deploy.js --network localhost => Takes the contract and deploys it to local network you can get contract address here.
