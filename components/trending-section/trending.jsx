@@ -1,19 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { NFT__DATA } from "./data";
 import NftCard from "../nft-card/nft-card";
-import { connectToMetamask, getCount } from "../../utils/web3";
-import { ethers } from "ethers";
-import FiredGuys from "../../src/artifacts/contracts/MyNFT.sol/FiredGuys.json";
+import { connectToMetamask } from "../../utils/web3";
 import { shortenHex } from "../../utils/shortenHex";
 import { AppContext } from "../../context/app.context";
 
 const Trending = () => {
   const context = React.useContext(AppContext);
-
-  useEffect(() => {
-    // onConnect();
-  });
 
   const onConnect = async () => {
     const state = await connectToMetamask();
